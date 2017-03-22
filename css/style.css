@@ -1,0 +1,171 @@
+@import "../css/fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1915px;
+  height: 830px;
+  background-image: linear-gradient(to bottom, #000000 96%, #3D3D3D 100%);
+}
+.container {
+  width: 1325px;
+  height: 780px;
+  margin: 0 auto;
+  background-image: url(../img/bgContainer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content {
+  float: left;
+  margin-left: 65px;
+  margin-top: 100px;
+  width: 440px;
+  height: 645px;
+}
+.get {
+clear: both;
+position: absolute;
+padding-left: 40px;
+width: 60px;
+font-size: 30px;
+color: #fff;
+font-family:"RobotoLight";
+}
+.money {
+  float: left;
+  width: 43%;
+  font-size: 110px;
+  font-family: "RobotoBold";
+  background: linear-gradient(#00dfff, #009ae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.freeChips {
+  float: left;
+  margin-top: 33px;
+  width: 40%;
+  height: 85px;
+  font-size: 55px;
+  line-height: 40px;
+  font-family: "RobotoBold";
+  text-transform: uppercase;
+ background: linear-gradient(#b0b0b0, #dddddd);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.bonusCode {
+  clear: both;
+  width: 310px;
+  text-align: center;
+  background-color: #000;
+  border: 2px solid #78a0ac;
+  box-shadow: 1px 1px 6px 0px #78a0ac;
+  font-family:"RobotoLight";
+}
+.use {
+  line-height: 40px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #78a0ac;
+}
+.bonus {
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.a {
+  margin-top: 20px;
+}
+.plus {
+  clear: both;
+  position: absolute;
+  width: 60px;
+  font-size: 30px;
+  color: #fff;
+  font-family:"RobotoLight";
+}
+.hundred {
+  float: left;
+  margin-top: 10px;
+  padding-left: -25px;
+  width: 40%;
+  font-size: 70px;
+  font-family: "RobotoBold";
+  background: linear-gradient(#00dfff, #009ae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.upTo {
+  float: left;
+  margin-top: 25px;
+  width: 12%;
+  text-align: center;
+  font-size: 33px;
+  line-height: 31px;
+  color: #fff;
+  font-family: "RobotoMedium";
+}
+.moneyUp {
+  float: left;
+  margin-top: 10px;
+  width: 40%;
+  font-size: 70px;
+  font-family: "RobotoBold";
+  background: linear-gradient(#00dfff, #009ae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.play {
+  clear: both;
+  margin-top: 32px;
+  width: 285px;
+  height: 65px;
+  text-align: center;
+  border: 2px solid #78a0ac;
+  box-shadow: 1px 1px 6px 0px #78a0ac;
+}
+.play span {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #00e6ff;
+  font-family:"RobotoBold";
+}
+.circleBlock {
+  clear: both;
+  margin-top: 30px;
+  width: 490px;
+  height: 135px;
+}
+.circle {
+  float: left;
+  width: 30%;
+  margin: 5px;
+  height: 135px;
+  text-align: center;
+  border-radius: 100%;
+  border: 2px solid #78a0ac;
+  box-shadow: 1px 1px 6px 0px #78a0ac;
+  font-family: "RobotoMedium"
+}
+.first {
+  width: 30px;
+  font-size: 35px;
+  color: #78a0ac;
+  border-bottom: 1px solid #78a0ac;
+}
+.firstStep {
+font-size: 13px;
+color: #fff;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-image: url(../img/logosFooter.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
