@@ -1,4 +1,6 @@
+/*import allfonts Roboto*/
 @import "../css/fonts.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +11,9 @@
   background-image: linear-gradient(to bottom, #000000 96%, #3D3D3D 100%);
 }
 .container {
+  margin: 0 auto;
   width: 1325px;
   height: 780px;
-  margin: 0 auto;
   background-image: url(../img/bgContainer.jpg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,41 +21,52 @@
 .content {
   float: left;
   margin-left: 65px;
-  margin-top: 100px;
+  margin-top: 80px;
   width: 440px;
   height: 645px;
 }
+/*for fristBlock*/
 .get {
-clear: both;
-position: absolute;
-padding-left: 40px;
-width: 60px;
-font-size: 30px;
-color: #fff;
-font-family:"RobotoLight";
+  clear: both;
+  position: absolute;
+  padding-left: 40px;
+  width: 60px;
+  font-size: 30px;
+  color: #fff;
+  font-family:"RobotoLight";
 }
 .money {
   float: left;
   width: 43%;
   font-size: 110px;
   font-family: "RobotoBold";
-  background: linear-gradient(#00dfff, #009ae6);
-  -webkit-background-clip: text;
+}
+/*For a gradient in the text I use a background clip but for older browsers we can use polyfill*/
+.money> span {
+  background: url(../img/gradientFor100.png)repeat;
+  background-size: contain;
+   color: #fff;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .freeChips {
   float: left;
   margin-top: 33px;
   width: 40%;
   height: 85px;
-  font-size: 55px;
   line-height: 40px;
+  font-size: 55px;
   font-family: "RobotoBold";
   text-transform: uppercase;
- background: linear-gradient(#b0b0b0, #dddddd);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
 }
+.freeChips> span {
+  background: url(../img/gradientForFC.png)repeat;
+  background-size: contain;
+   color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*bonusCode*/
 .bonusCode {
   clear: both;
   width: 310px;
@@ -75,8 +88,9 @@ font-family:"RobotoLight";
   text-transform: uppercase;
   color: #fff;
 }
-.a {
-  margin-top: 20px;
+/*for secondBlock*/
+.secondBlock {
+  margin-top: 15px;
 }
 .plus {
   clear: both;
@@ -89,18 +103,20 @@ font-family:"RobotoLight";
 .hundred {
   float: left;
   margin-top: 10px;
-  padding-left: -25px;
-  width: 40%;
+  width: 39%;
   font-size: 70px;
   font-family: "RobotoBold";
-  background: linear-gradient(#00dfff, #009ae6);
-  -webkit-background-clip: text;
+}
+.hundred> span {
+  background: url(../img/gradientFor100.png)repeat center center;
+  color: #fff;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .upTo {
   float: left;
   margin-top: 25px;
-  width: 12%;
+  width: 8%;
   text-align: center;
   font-size: 33px;
   line-height: 31px;
@@ -117,21 +133,33 @@ font-family:"RobotoLight";
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.play {
+.moneyUp> span {
+ background: url(../img/gradientFor100.png)repeat center center;
+ color: #fff;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+/*playBtn*/
+.playBtn {
   clear: both;
   margin-top: 32px;
   width: 285px;
   height: 65px;
-  text-align: center;
   border: 2px solid #78a0ac;
   box-shadow: 1px 1px 6px 0px #78a0ac;
 }
-.play span {
+.playBtn>div {
+  margin: 0 auto;
+  width: 285px;
+  height: 65px;
+  padding-top: 12px;
+  text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   color: #00e6ff;
   font-family:"RobotoBold";
 }
+/*last block with circle*/
 .circleBlock {
   clear: both;
   margin-top: 30px;
@@ -140,7 +168,7 @@ font-family:"RobotoLight";
 }
 .circle {
   float: left;
-  width: 30%;
+  width: 29%;
   margin: 5px;
   height: 135px;
   text-align: center;
@@ -149,23 +177,36 @@ font-family:"RobotoLight";
   box-shadow: 1px 1px 6px 0px #78a0ac;
   font-family: "RobotoMedium"
 }
-.first {
-  width: 30px;
+.numberStep {
+  margin-left: 35px;
+  margin-top: 10px;
+  width: 80px;
+  text-align: center;
   font-size: 35px;
   color: #78a0ac;
   border-bottom: 1px solid #78a0ac;
 }
-.firstStep {
-font-size: 13px;
-color: #fff;
+.step {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  font-family:"RobotoLight"
 }
-
-
-
+/*footer with logos and line*/
 footer {
+  width: 100%;
+  height: 60px;
+  background-image: url(../img/lineForFooter.png);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.line {
   width: 100%;
   height: 60px;
   background-image: url(../img/logosFooter.png);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
